@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/holo_orange_light"
+    android:weightSum="100">
+
+
+    <TextView
+        android:id="@+id/api_hotelname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="66.6"
+        android:background="@color/cardview_light_background"
+        android:gravity="center"
+        android:text="Hotel name"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:layout_weight="33.3">
+
+        <TextView
+            android:gravity="center"
+            android:text="Price"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:id="@+id/api_hotelprice" />
+        <TextView
+            android:gravity="center"
+            android:text="From"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:id="@+id/api_hotelFrom" />
+        <TextView
+            android:gravity="center"
+            android:text="To"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:id="@+id/api_hotelTo" />
+        <TextView
+            android:gravity="center"
+            android:text="Date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:id="@+id/api_hotelLocation" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ISU Settings</string>
+    <!-- Settings Activity Title -->
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="user_info_header">User Information</string>
+    <string name="appearance_header">Appearance Settings</string>
+
+    <!-- User Information Preferences -->
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="birth_date">Birthday</string>
+
+    <!-- Appearance Preferences -->
+    <string name="appearance_title">Dark Mode</string>
+    <string name="dark_type_title">Dark Mode Type</string>
+    <string name="dark_type_off">Black on Grey</string>
+    <string name="dark_type_on">Full Blackout</string>
+</resources>

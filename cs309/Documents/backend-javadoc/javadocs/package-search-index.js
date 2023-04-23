@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"backend.Comments"},{"l":"backend.Flights"},{"l":"backend.Lodgings"},{"l":"backend.Posts"},{"l":"backend.Trips"},{"l":"backend.Users"}]

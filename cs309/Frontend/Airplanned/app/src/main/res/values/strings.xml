@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Airplanned</string>
+    <string name="textview2">TextView2</string>
+    <string name="textview3">TextView3</string>
+    <string name="textview4">TextView4</string>
+    <string name="textview1">TextView1</string>
+    <string name="title_activity_add_post">AddPostActivity</string>
+
+</resources>

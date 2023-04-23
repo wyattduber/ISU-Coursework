@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Experiment1</string>
+    <string name="experiement_1">Experiement 1!</string>
+    <string name="exit">Exit</string>
+    <string name="login">Login</string>
+    <string name="closet">Closet</string>
+    <string name="register">Register</string>
+</resources>

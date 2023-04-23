@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/user_info_header">
+
+        <EditTextPreference
+            app:key="full_name"
+            app:title="@string/full_name"
+            app:defaultValue="Wendy Wintersteen"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="wwinter@iastate.edu"
+            app:key="email"
+            app:title="@string/email_address"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="birthday"
+            app:defaultValue="Format: DD/MM/YYYY"
+            app:title="Birthdate"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/appearance_header">
+
+        <SwitchPreferenceCompat
+            app:key="appearance"
+            app:title="@string/appearance_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="appearance"
+            app:key="dark_mode"
+            app:summaryOff="@string/dark_type_off"
+            app:summaryOn="@string/dark_type_on"
+            app:title="@string/dark_type_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
