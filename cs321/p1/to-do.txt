@@ -1,0 +1,23 @@
+* Implement a swap procedure that swaps the values in two different 8-byte
+  integers in memory.
+* Implement a find smallest procedure that finds the smallest 8-byte integer
+  in an array and returns its index.
+* Implement selection sort using your find smallest and swap procedures.  To
+  be clear, selection sort can be more efficiently implemented without any
+  helper procedures, but implementing it in assembly is easier with the
+  helpers--and it gives you experience with procedure calls and stack
+  manipulation--so we are requiring that you do it this way.
+
+  Pseudocode for the selection sort:
+
+    SelectionSort(array)
+      for each element in array in order from first to last:
+        swap element with smallest element in the subarray that it begins
+
+* Implement a procedure to fill an array with consecutive 8-byte integers in
+  reverse-sorted (high to low) order
+* Implement a "main" procedure that ties all of this together by:
+** Calling your fill procedure to create a reverse sorted array in main
+   memory.
+** Sorting that array using your selection sort implementation
+** Program ends with a DUMP

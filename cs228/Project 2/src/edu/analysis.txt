@@ -1,0 +1,14 @@
+Analysis:
+
+    The differences in the Big-O time for each of the sorters is very noticeable. In running the sorters on the wordlist length of a million, it took 9.15 hours to sort the list using insertion sort,
+    about 28 seconds to sort using merge sort, and 5 seconds using quick sort. The insertion sort was already known to have an O(n^2) time, and it certainly proved it on the experimental data.
+    It was the easiest to implement, but it takes the most time to sort by far. The reason that it takes so long is that as it finds a smaller input in the middle of the array, it has to sort it
+    back down to it's correctly sorted spot in the array and that can (and will, as proved in the experimentation) take an extremely long amount of time when we're dealing with a million strings
+    to compare and sort with. Merge sorter is much, MUCH faster than insertion sort, however it still isn't the fastest one. It has an O(n log n) time, which is much better than the
+    insertion sort's O(n^2) time. This is once again demonstrated in the experimental results of the two sorters, with the merge sort scoring hundreds of times quicker for the same accuracy in sorting
+    that the insertion sort got. The reason it goes so much faster is that it breaks the array up into smaller arrays, sorts them, and merges them back together. This means that the time it takes
+    to do one iteration takes significantly less time than it takes to sort a smaller result all the way back until it reaches it's correct position, like in insertion sort. The quickest one,
+    no pun intended, is quicksort. This sort was able to sort a million words in 5 seconds, and That to me is impressive. The reason that it can do it so fast is that it divides and conquers.
+    It has a pivot point where it splits into two arrays, at which point the 2 arrays are then sorted recursively. This means that the arrays get sorted exponentially faster as time goes on
+    and while this makes quicksort the most unstable and hardest to implement, it makes it the quickest method if an array is needed to be sorted quickly. It's best case O(n log n) time is what
+    it has to offer.
