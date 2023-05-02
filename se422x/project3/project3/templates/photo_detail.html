@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ photo.name }}</h1>
+  <img src="{{ photo.image.url }}" alt="{{ photo.name }}">
+  <p>Uploaded by {{ photo.user }}</p>
+  <p>Tags: {{ photo.tags }}</p>
+  <a href="{{ photo.image.url }}" class="btn btn-primary" download="{{ photo.name }}">Download</a>
+{% endblock %}

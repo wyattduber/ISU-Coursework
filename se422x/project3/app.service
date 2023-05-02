@@ -1,0 +1,12 @@
+[Unit]
+Description=Photo Gallery Flask Application for SE 422X
+After=network.target iptables.service firewalld.service ip6table.service ipset.service nginx.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /home/ubuntu/project3/manage.py runserver
+ExecStop=kill $(pgrep -f "/usr/bin/python3 /home/ubuntu/project3/manage.py runserver")
+
+[Install]
+WantedBy=multi-user.target
