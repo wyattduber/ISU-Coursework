@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="/">Group 8 Project 4</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/for-sale">For Sale</a></li>
+                <li><a href="/housing">Housing</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/community">Community</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div>
+            <h2>Healthcare</h2>
+            {% if msg %}
+                <p>{{ msg }}</p>
+            {% endif %}
+
+            {% for h in healthcare %}
+            <div>
+                <h4>{{h.Title}}</h4>
+                <ul>
+                  <li>Uploaded: {{h.CreationTime}}</li>
+                  <li>Employer: {{h.Employer}}</li>
+                  <li>Experience Needed: {{h.Experience}}</li>
+                  <li>Salary: {{h.Salary}}</li>
+                  <li>Location: {{h.Location}}</li>
+                  <li>Contact Information: {{h.Email}}</li>           
+                </ul>
+            </div>
+            {% endfor %}
+
+            {% if inSession %}
+            <div >
+
+            <form action="{{url}}" method="post">
+                <div class="container">
+                <input type="text" placeholder="Experience Needed" name="experience" value={{request.form.experience}} > <br>
+                <input type="text" placeholder="Salary" name="salary" value={{request.form.resersalaryvation}} > <br>
+                <input type="text" placeholder="Location" name="location" value={{request.form.location}} > <br>
+                <input type="text" placeholder="Email" name="email" value={{request.form.email}} > <br>
+                <input type="text" placeholder="Title" name="title" value={{request.form.title}} > <br>
+                <input type="text" placeholder="Employer" name="employer" value={{request.form.employer}} > <br>
+                <input type="submit" value="Upload" style="width:60px">
+                <button type="button" onclick="document.getElementById('showMe').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+            </div>
+            
+            {% endif %}
+        </div>
+      </div>
+    </main>
+</body>
+</html>

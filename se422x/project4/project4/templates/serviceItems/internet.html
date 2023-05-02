@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="/">Group 8 Project 4</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/for-sale">For Sale</a></li>
+                <li><a href="/housing">Housing</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/community">Community</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div>
+          <h2>Internet</h2>
+          {% if msg %}
+              <p>{{ msg }}</p>
+          {% endif %}
+
+          {% for i in internet %}
+          <div>
+              <h4>{{i.CompanyName}}</h4>
+              <ul>
+                <li>Uploaded: {{i.CreationTime}}</li>
+                <li>Cost: {{i.Cost}}</li>
+                <li>Location: {{i.Location}}</li>
+                <li>Contact Information: {{i.PhoneNum}}</li>
+                <li>Operating Hours: {{i.OperatingHours}}</li>
+                <li>Internet Speed: {{i.Speed}}</li>
+              </ul>
+          </div>
+          {% endfor %}
+
+          {% if inSession %}
+          <div >
+
+          <form action="{{url}}" method="post">
+              <div class="container">
+              <input type="text" placeholder="Cost" name="cost" value={{request.form.cost}} > <br>
+              <input type="text" placeholder="Location" name="location" value={{request.form.location}} > <br>
+              <input type="text" placeholder="Phone Number" name="phoneNum" value={{request.form.phoneNum}} > <br>
+              <input type="text" placeholder="Operating Hours" name="operating_hours" value={{request.form.operating_hours}} > <br>
+              <input type="text" placeholder="Company Name" name="company_name" value={{request.form.company_name}} > <br>
+              <input type="text" placeholder="Speed" name="speed" value={{request.form.speed}} > <br>
+              <input type="submit" value="Upload" style="width:60px">
+              <button type="button" onclick="document.getElementById('showMe').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+          </form>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </main>
+</body>
+</html>

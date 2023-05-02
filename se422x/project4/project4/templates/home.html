@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="/">Group 8 Project 4</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/for-sale">For Sale</a></li>
+                <li><a href="/housing">Housing</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/community">Community</a></li>
+            </ul>
+        </nav>
+    <main>
+        
+        <h2>Welcome to Not-Craigslist!</h2>
+        {% if inSession %}
+          <p>Welcome, {{ inSession }}!</p>
+        {% endif %}
+        <p> Please log in, then use the toolbar above to navigate between sections.
+
+        </p>
+        {% if not inSession %}
+        <h3>You are not logged in. Please do so here: </h3> 
+        <form action="{{url_for('login')}}" method="post">
+          <input type="text" placeholder="Username" name="username" value={{request.form.username}} > <br>
+          <input type="password" placeholder="Password" name="password" value={{request.form.password}} > <br>
+          <input type="submit" value="Login" style="width:60px">
+        </form>
+        {% else %}
+            <p>Now that you are logged in you can upload items to each category!</p>
+            <p>Make sure you fill out all the necessary information when uploading a new item. Give it a shot!</p>
+            <form action="{{url_for('logout')}}" method="post">
+                <input type="submit" value="Logout" style="width:60px">
+            </form>
+        {% endif %}
+        {% if loginMsg %}
+            <p>{{ loginMsg }}</p>
+        {% endif %}
+        {% if signupMsg %}
+            <p>{{ signupMsg }}</p>
+        {% endif %}
+        <div>
+            <h2>Sign Up</h2>
+            <form action="{{url_for('signup')}}" method="post">
+              <div class="container">
+                <label for="uname"><b>Username</b></label> <br>
+                <input type="text" placeholder="Enter Username" name="uname" value={{request.form.uname}} > <br>
+          
+                <label for="pword"><b>Password</b></label> <br>
+                <input type="password" placeholder="Enter Password" name="pword" value={{request.form.pword}} > <br>
+
+                <label for="cpword"><b>Confirm Password</b></label> <br>
+                <input type="password" placeholder="Confirm Password" name="cpword" value={{request.form.cpword}} > <br>
+                  
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label> <br>
+
+                <p>{{ signupMsg }}</p>
+                <input type="submit" value="Sign Up" style="width:60px">
+                <button type="button" onclick="document.getElementById('showMe').style.display='none'" class="cancelbtn">Cancel</button>
+                
+              </div>
+            </form>
+          </div>
+      </div>
+    </main>
+    </div>
+    </body>
+</html>

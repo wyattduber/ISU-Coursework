@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="/">Group 8 Project 4</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/for-sale">For Sale</a></li>
+                <li><a href="/housing">Housing</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/community">Community</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <h2>Rideshare</h2>
+                {% if msg %}
+                <p>{{ msg }}</p>
+                {% endif %}
+
+                {% for r in rideshare %}
+                <div>
+                    <ul>
+                        <li>Uploaded: {{r.CreationTime}}</li>
+                        <li>Pickup Location: {{r.PickupLocation}}</li>
+                        <li>Contact Information: {{r.PhoneNum}}</li>
+                        <li>Date / Time: {{r.DateTime}}</li>
+                        <li>Dropoff Location: {{r.DropoffLocation}}</li>
+                        <li>Pay: {{r.Pay}}</li>
+                        <li>Amount of People: {{r.People}}</li>
+                    </ul>
+                </div>
+                {% endfor %}
+
+                {% if inSession %}
+                <div>
+
+                    <form action="{{url}}" method="post">
+                        <div class="container">
+                            <input type="text" placeholder="Pickup Location" name="pickup_location" value={{request.form.pickup_location}}>
+                            <br>
+                            <input type="text" placeholder="Phone Number" name="phone_num"
+                                value={{request.form.phone_num}}> <br>
+                            <input type="text" placeholder="Date / Time" name="date_time" value={{request.form.date_time}}> <br>
+                            <input type="text" placeholder="Dropoff Location" name="dropoff_location" value={{request.form.dropoff_location}}> <br>
+                            <input type="text" placeholder="Pay" name="pay"
+                                value={{request.form.pay}}> <br>
+                            <input capacity="text" placeholder="Amount of People" name="people" value={{request.form.people}}> <br>
+                            <input type="submit" value="Upload" style="width:60px">
+                            <button type="button" onclick="document.getElementById('showMe').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+    </div>
+    </main>
+</body>
+
+</html>
