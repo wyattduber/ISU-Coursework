@@ -1,0 +1,129 @@
+2.3:
+	
+	SUB X9,X3,X4
+	LSL X9,X9, #3
+	ADD X11,X6,X9
+	LDUR X10,[X11,#0]
+	STUR X10,[X7,#64]
+	
+2.4:
+
+	B[g] = A[f] + A[f + 1];
+	
+2.6:
+
+	Big Endian Format:
+		The most significant byte is stored at the lowest address. Therefore:
+			
+			Address		Byte
+			   0 		 ab
+			   1		 cd
+			   2		 ef
+			   3		 12
+	
+	Little Endian Format:
+		The most significant byte is stored at the highest address. Therefore:
+		
+			Address		Byte
+			   0		 12
+			   1		 ef
+			   2		 cd
+			   3		 ab
+			   
+2.8
+
+	SHL X9,X3, #3
+	ADD X9,X9,X6
+	LDUR X9,[X9,#0]
+	SHL X10,X4, #2
+	ADD X10,X10,X6
+	LDUR X10,[X10,#0]
+	ADD X11,X9,X10
+	STUR X11,[X7,64]
+	
+2.11.1:
+
+	0x8000000000000000 + 0xD000000000000000 = 0x1500000000000000
+
+2.11.2:
+
+	There has been overflow.
+
+2.11.3:
+
+	0x8000000000000000 - 0xD000000000000000 = 0x500000000000000
+
+2.11.4:
+
+	Yes, no overflow.
+
+2.11.5:
+
+	0x8000000000000000 + 0xD000000000000000 = 0x1500000000000000
+	0x1500000000000000 + 0x8000000000000000 = 0x1D00000000000000
+
+2.11.6:
+
+There has been overflow.
+
+2.17.1:
+
+	We need 7 bits, and have 29 bits remaining.
+	
+	8bits, 7bits, 7bits, 7bits, 1bit, 2bits
+
+2.17.2:
+
+	We need 8 bits,  but have 10 bits for the last one.
+	
+	8bits, 7buts, 7bits, 10bits
+	
+2.17.3:
+
+	These changes could decrease the size of a program, and allow more complex operations 
+	to be implemented in one instruction vs. requiring multiple instructions. This improves 
+	optimization and allows for faster computing times. 
+
+2.20:
+
+	NOT X10,X11
+	
+	Since we don't want X11, We'll use another operand and the EOR function.
+	
+	EOR X10,X11,X12
+
+2.23.1:
+
+	2^27 bytes before and after value of PC
+
+2.23.2:
+
+	2^20 bytes before and after current value of PC
+
+2.37:
+
+	MOVZ X0,4386,LSL 48
+	MOVK X0,13124,LSL 32
+	MOVK X0,21862,LSL 0
+	MOVK X0,30600,LSL 0
+	
+2.41.1:
+
+	Before:
+		Total Cycles = Total Instructions * CPI = 3800x10^6 cycles
+		
+	After:
+		Total Instructions Decreased by 25% = (500 * .75) x 3000 + 3000 = 3675
+		CPI Increased by 10%: 3675x10^6 * 1.1 = 4042.5x10^6
+		
+		It will take more time, therefore this is a bad design.
+
+2.41.2:
+
+	Clock Cycles:
+		500 x 0.5 + 3000 = 3550 (x10^6)
+		3550 / 3800 = 0.9342, which is an increase of 6.58%.
+		
+		500 x 0.1 + 300 x 10 + 100 x 3 = 3350 (x10^6)
+		3350 / 3800 = 0.8816, which is an increase of 11.84%.
+	

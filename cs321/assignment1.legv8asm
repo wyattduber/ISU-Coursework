@@ -1,0 +1,111 @@
+// Brent Brain, Kyle Riggs, Zachary Kline and Wyatt Duberstein
+
+
+ADDI X9, XZR, #8
+BL arraybuilder       //Build reverse ordered array
+ADD X0, X19, XZR
+ADD X1, XZR, XZR
+ADD X24, X20, XZR
+SUBI X24, X24, #1
+
+B loop1
+loop1:
+
+  BL findsmallest
+  ADD X2, X22, XZR
+  BL swap
+  ADDI X1, X1, #1
+  ADDI X4, X1, #1
+  SUBS X5, X2, X4
+  CBZ X5, end
+  SUBIS X6, X5, #1
+  B.MI end
+  B loop1
+
+B end
+
+
+
+
+arraybuilder:
+  SUBI SP, SP, #8
+  STUR LR, [SP, #0]
+  ADDI X10, XZR, #0      //Set i=0
+  ADDI X20, X9, #1       //Store length of array in X20
+  loop:
+  LSL X11, X10, #3        //X2=i*8
+  ADD X19, XZR, X11       //X0=X2
+  STUR X9, [X19, #0]     //Store X9 in X0 at A[i]
+  ADDI X10, X10, #1       //i=i+1
+  SUBI X9, X9, #1       //X9=X9-1
+  CBNZ X9, loop         //if X9!=0 then loop
+  CBZ X9, Exit                //if X9=0 then add zero
+  Exit:
+    LDUR LR, [SP, #0]
+    BR LR
+
+swap:                 //PAREMETERS: ARRAY is X0, Index 1 is X1, Index 2 is X2
+  SUBI SP, SP, #16
+  STUR LR, [SP, #0]
+  STUR X0, [SP, #8]
+  LSL X9, X1, #3       //X9=Index 1*8=i->gives us the first index in bytes for memory
+  LSL X10, X2, #3       //X10=Index 2*8=j->gives us the second index in bytes for memory
+
+  ADD X9, XZR, X9      //X9=Array Base+Index1*8 Offset
+  ADD X10, XZR, X10      //X10=Array Base+Index2*8 Offset
+  LDUR X11, [X9,#0]     //Loading x=A[i]
+  LDUR X12,[X10, #0]    //Loading y=A[j]
+  STUR X12, [X9, #0]   //Storing y->A[i]
+  STUR X11, [X10,#0]     //Storing x->A[j]
+  LDUR LR, [SP, #0]
+  LDUR X0, [SP, #8]
+  ADDI SP, SP, #16
+  BR LR               //Back to procedure call
+
+
+findsmallest:         //Parameters ARRAY is X0, Start index is X1
+  //Stack
+  SUBI SP, SP, #16        //Make room in stack
+  STUR LR, [SP, #0]       //Store address for return
+  STUR X1, [SP, #8]       //Store start index for use later
+
+  ADD X22, X1, XZR      //X22 is the location of the smallest element.
+  LSL X9, X1, #3       //Get A[0]
+  LDUR X11, [X9, #0]    //Get x=A[0]
+  ADD X21, X11, XZR     //smallest=x
+  BL smallestloop
+
+  smallestloop:
+    LSL X9, X1, #3        //i*8
+    ADDI X10, X1, #1      //j=i+1
+
+    LSL X13, X10, #3      //j*8
+    LDUR X11, [X9,#0]     //x=A[i]
+    LDUR X12, [X13,#0]    //y=A[j]
+    SUBS X3, X24, X1
+    CBZ X3, done
+    B.MI end
+    SUBS X14,X12,X11      //X14=y-x
+    B.MI lessthan
+    B.PL greaterthan
+
+
+  lessthan:
+  ADD X21, XZR, X12
+  ADD X22, XZR, X1
+  ADDI X1, X1, #1
+  BL smallestloop
+
+  greaterthan:
+  ADD X21, XZR, X11
+  ADDI X1, X1, #1
+  BL smallestloop
+
+  done:
+  LDUR LR, [SP, #0]
+  LDUR X1, [SP, #8]
+  ADDI X22, X22, #1
+  BR LR
+
+end:
+DUMP

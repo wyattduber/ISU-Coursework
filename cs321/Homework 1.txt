@@ -1,0 +1,160 @@
+1.2: 
+
+	1. Assembly Lines in automobile manufacturing: Performance via Pipelining
+
+	2. Suspension Bridge Cables: Dependability via redundancy
+
+	3. Aircraft and marine navigation systems that incorporate wind information: Performance via prediction
+
+	4. Express elevators in buildings: Performance via paralellism
+
+	5. Library Service Desk: Make the common case fast
+	
+	6. Increasing the gate area on a CMOS transistor to decrease it's switching time: Hierarchy of memories
+
+	7. Adding  electromagnetic  aircraft  catapults  (which  are  electrically  powered  as  
+       opposed  to  current  steam-powered  models),  allowed  by  the  increased  
+	   power  generation offered by the new reactor technology: Design for Moore's Law
+   
+	8. Building self-driving cars whose control systems partially rely on existing 
+	   sensor systems already installed into the base vehicle, such as lane 
+	   departure systems and smart cruise control systems: Use abstraction to simplify design
+	
+1.3:
+
+	1. A compiler program reads and translates the code into assembly language.
+	2. Another program called an assembler translates the assembly language into
+	   a program that the machine can understand and execute.
+
+1.4:
+
+	a. 1280 x 1024 = 1,310,720 pixels x 3 = 3,932,160 bytes
+	
+	b. 100 Mb/s = 10^8 bit/s
+	   3,932,160 x 8 = 31,457,280 / 10^8 = 0.3145728 s
+
+1.5:
+
+	a. Processor 1: 2 x 10^9
+	   Processor 2: 2.5 x 10^9
+	   Processor 3: 1.82 x 10^9
+	   
+	   Processor 2 has the highest performance
+	   
+	b. Processor 1: 
+		Instructions: 2 x 10^9 x 10 = 2 x 10^10
+		Clock Cycles: 3 x 10^9 x 10 = 3 x 10^10
+	   Processor 2:
+		Instructions: 2.5 x 10^9 x 10 = 2.5 x 10^10
+		Clock Cycles: 2.5 x 10^9 x 10 = 2.5 x 10^10
+	   Processor 3:
+	    Instructions: 1.82 x 10^9 x 10 = 1.82 x 10^10
+		Clock Cycles: 1.82 x 10^9 x 10 = 1.82 x 10^10
+	
+	c. Processor 1: 1.2 / 0.7 = 1.71 x Clock Speed. Therefore, the clock speed must increase by 71%
+
+1.6:
+
+	a. Processor 1: (1 x 10^5) + (2 x 2 x 10^5) + (3 x 5 x 10^5) + (2 x 2 10^5) = 2.6 x 10^6
+			CPU Times: (2.6 x 10^5) / 2.5 = 1.04 ms
+	   Processor 2: (2 x 10^5) + (2 x 2 10^5) + (2 x 5 x 10^5) + (2 x 2 x 10^5) = 2 x 10^6
+			CPU Times: (2 x 10^5) / 3 = 666.67 ms
+	   Since processor one has more clock cycles than processor 2, Processor 2 is faster.
+	   
+	b. Processor 1: CPI = Clock Cycles / Number of Instructions = (2.6 x 10^6) / 10^6 = 2.6
+	   Processor 2: CPI = Clock Cycles / Number of Instructions = (2 x 10^6) / 10^6 = 2
+	   
+	c. Processor 1: 2.6 x 10^6 Clock Cycles
+	   Processor 2: 2 x 10 ^6 Clock Cycles
+
+1.8.1:
+
+	Formula for Dynamic Power: P = Cl * V^2 * f
+	Rearranged Formula for Capacitive Load: Cl = P / (V^2 * f)
+	Capacitive Load for Pentium P4 Prescott: 90W / (1.25V^2 * 3.4 x 10^9 s^-1) = 2.1 x 10^-8 C/V = 16nF
+	Capacitive Load for Core i5 Ivy Bridge: 40W / (3.6GHz * 0.9V^2) = 14.52nF  
+
+1.8.2:
+
+	Pentium P4 Prescott:  10W / (10W + 90W) = 10% <-- Percent of Static Power
+	10W/90W = 0.11 <-- Ratio of Static to Dynamic Power
+	
+	Core i5 Ivy Bridge: 30W / (30W + 40W) = 42.86% <-- Percent of Static Power
+	30W/40W = 0.75 <-- Ration of Static to Dynamic Power
+
+1.8.3:
+
+	Pentium P4 Prescott: 
+		57.6 A/V * Vnew^2 + 8A(Vnew) - 90W = 0
+		Vnew = (-8A - sqrt((8A^2) - 4(57.6) - 90W)) / (2 * 57.6) = 1.18 V.
+			This means that there was a 5.4% reduction over the original 1.25 volts.
+			
+	Core i5 Ivy Bridge: 
+		(14.52 x 10^-9)(3.4 x 10^9)Vnew^2 + 8Vnew -90W = 59.37Vnew^2 - 8Vnew - 90W
+		Vnew = (-8A +- sqrt((8A)^2 - 4(49.37)(90w))) / (2 * 49.37) = 1.43V.
+			This means that there was a 14.4% increase in the original 1.25 volts.
+
+1.11.1:
+
+	Clock Cycles = 750 / (0.333 x 10^-9) = 2.25 x 10^12
+	CPI = Clock Cycles / Number of Instructions = (2.25 x 10^12) / (2.389 x 10^12) = 0.94
+
+1.11.2:
+
+	Spec Ratio = Reference Time / Execution Time = 9650 / 750 = 12.87
+
+1.11.3:
+
+	Clock Cycles = Number of Instructions x CPI = (2.6279 x 10^12) * 0.94 = 2.47 x 10^12
+	CPU Time = Cycle Timing x Clock Cycles = (2.47 x 10^12) x (0.333 x 10^-9) = 822.51 s
+
+1.11.4:
+
+	Same process as the last problem, but with a different CPI. Therefore:
+	Clock Cycles = (2.6279 x 10^12) x 0.987 = 2.59 x 10^12
+	CPU Time = (2.59 x 10^12) x (0.333 x 10^-9) = 862.47 s
+
+1.11.5:
+
+	Similar to part 2, we can use the same formula for the SPECratio
+	SPECratio = 9650 / 862.47 = 11.19
+
+1.11.6:
+
+	Cycle Time = 1 / 4 GHZ = 0.25 x 10^-9
+	Clock Cycles = 700 /(0.25 x 10^-9) = 2.8 x 10^12
+	CPI = (2.8 x 10^12) / (2.03 x 10^12) = 1.38
+
+1.11.7:
+
+	Since 4 GHz / 3 GHz = 1.333, The Clock Rate has increased by 33%.
+	Also, since 1.38 = 0.94 = 1.468, the CPI has increased by 46.8%.
+	This is because there is less instructions being sent to the CPU
+
+1.11.8:
+
+	Since the ratio of the new and old CPU time is
+	700 / 750 = 0.933
+	The CPU time has decreased by 6.7%
+
+1.11.9:
+
+	Execution Time = 0.9 x 960 ns = 864 x 10^-9
+	Clock rate = 4 GHz = 4 x 10^9 Hz
+	Number of Instructions = ((864 x 10^-9) x (4 x 10^9)) / 1.61 = 2147
+
+1.11.10:
+
+	New execution time = 0.9 x (864 x 10^-9) = 777.6 x 10^-9
+	New Clock Rate = (1.61 x 2147) / (777.6 x 10^-9) = 4.445 GHz
+	
+	Speedy.
+
+1.11.11:
+
+	CPI = 0.85 x 1.61 = 1.3685
+	Execution Time = 0.8 x (777.6 x 10^-9) = 622.08 x 10^-9
+	New Clock Rate = (1.3685 x 2147) / (622.08 x 10^-9) = 4.72 GHz
+	
+	Even Speedier.
+	

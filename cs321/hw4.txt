@@ -1,0 +1,180 @@
+Wyatt Duberstein
+Written Problem Set 4
+COM S 321
+
+1, 4, 5, 16, 27
+
+1.1: 
+
+	BRANCH - 0
+	ALU operation - AND
+	MEM WRITE - 0
+	MEM READ - 0
+	REG WRITE - 1
+	
+1.2:
+
+	Instructions: Stored in the Instruction Memory and fetched
+				  using the Program Counter
+	Program Counter: Stores the addresses of the instruction
+	Register Files:	Required for reading and storing the data
+	ALU: Does the actual AND operation on the register values
+	
+	Therefore, the blocks that perform a useful function for this program are
+	Instruction Memory, Program Counter, Register files, and the ALU.
+
+1.3:
+
+	None of the resources produce no output because all units do in fact have an output. 
+	Some of them are not used.
+
+	Since instructions do not need the use of the output of Branch Add and Registers Write,
+	those are the two that produce an output that is not used.
+	
+4.1:
+
+	If the MemToReg wire is stuck at 0, then the values can never be read from memory. 
+	Therefore, rest of the blocks cannot get and use the info needed as it cannot be accessed.
+	
+4.2:
+
+	If the ALUSrc wire is stuck at 0, then the ALU can only have the value from the register file
+	as it cannot get the current value from the instruction block. The rest of the functions will not work.
+	
+4.3:
+
+	If the Reg2Loc wire is stuck at 0, then it cannot write a value to the register
+	as it cannot access the register number to read the data register.
+	
+5.1:
+
+	0xf8014062 = 1111 1000 0000 0001 0100 0000 0110 0010
+	
+	Output of the Sign Extend: 0000 0000 0000 0000 0100 0000 0110 0010
+	
+	Shift Left operation by expanding by 2 bits: 0000 0000 0101 0000 0001 1000 1000
+	
+5.2:
+
+	111110 = 3E
+	The signal of the ALU is 00.
+	
+5.3:
+
+	The new path is determined by adding 4 to the previous path,
+	so the new path is PC + 4.
+	The path to get here is:
+		1. ALU will give the PC + 4 address using the ADD controller
+		2. The output will go to port 0 of the MUX
+		3. Branch Control will set port to 0 and new address will go to MUX
+		4. PC is set to PC + 4
+		
+5.4:
+
+	WriteReg	MEM/ALU		ALU		JUMP	BRANCH
+	  MUX		  MUX		MUX		 MUX	  MUX
+IN	  0/2		   x		 20     PC+4	 PC+4
+OUT	   1		   0	   -128		PC+4	 PC+4
+
+5.5:
+
+		ALU		ADD(PC+4)		ADD(BRANCH)
+IN	   20&-3     PC & 4         PC+4 & 20 * 4
+OUT	  -128&-32   PC & 4          PC+4 & 2090 * 4
+	
+5.6:
+
+		Reg1	Reg2	RegWrite	Write Reg	WriteData
+IN		 3		 2		   0		x(0 or 2)	    x
+OUT	     4		 2		   1 			1			0
+
+16.1:
+	
+	Pipelined:
+	The Clock cycle time is equivalent to the slowest stage.
+	Since the ID stage is the slowest, then the Clock Cycle Time = 350ps
+	
+	Non-Pipelined:
+	Sum of all stages = 250+350+150+300+100= 1250ps
+	
+16.2:
+
+	Pipelined:
+	Latency = Number of stages x Clock cycle time
+	Therefore, 5 * 350 = 1750ps
+	
+	Non-Pipelined:
+	Latency = sum of all stages
+	Therefore, 250+350+150+300+100= 1250ps
+	
+16.3:
+
+	If we split ID into 2 stages, then each stage for ID would be
+	175ps considering that each half-stage is just half the total time.
+	
+	Therefore, the new Clock cycle time is the next-lowest number,
+	which is 300ps.
+	
+16.4: 
+
+	20% + 15% = 35%
+	
+16.5:
+
+	50% + 20% = 70%
+	
+27.1:
+
+	ADD X5, X2, X1
+	NOP
+	NOP
+	LDUR X3, [X5, #4]
+	LDUR X2, [X2, #0]
+	NOP
+	ORR X3, X5, X3
+	NOP
+	NOP
+	STUR X3, [X5, #0]
+	
+27.2:
+
+	It is not possible to rearrange the instructions any further
+	
+27.3:
+
+	The execution of the instructions will return false values
+	because the hazard detection unit is absent and the processor
+	can't forward the data.
+	
+27.4:
+
+	Instruction			Cycles			Signals
+		1		    IF ID EX MEM WB    PC Write = 1
+									   ALU1 = x
+									   ALU2 = x
+									   
+		2			 IF ID EX MEM	   PC Write = 1
+									   ALU1 = x
+									   ALU2 = x
+       
+	    3			   IF ID EX		   PC Write = 1
+									   ALU1 = 0
+									   ALU2 = 0
+	    
+		4				IF ID		   PC Write = 1
+									   ALU1 = 1
+									   ALU2 = 0
+									   
+	    5				  IF		   PC Write = 1
+									   ALU1 = 0
+									   ALU2 = 0
+
+27.5:
+
+		ID: has to be stalled depending on the values of EX and MEM.
+		MEM: Checks the register number
+		EX: Check Register
+		
+27.6:
+
+	
