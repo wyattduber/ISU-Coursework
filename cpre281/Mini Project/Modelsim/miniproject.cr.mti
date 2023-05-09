@@ -1,0 +1,22 @@
+C:/Users/wyattd/Desktop/unclebobfixed.v {1 {vlog -work work -vopt -stats=none C:/Users/wyattd/Desktop/unclebobfixed.v
+Model Technology ModelSim SE-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+-- Compiling module unclebobfixed
+
+Top level modules:
+	unclebobfixed
+
+} {} {}} C:/Users/wyattd/Desktop/unclebob.v {1 {vlog -work work -vopt -stats=none C:/Users/wyattd/Desktop/unclebob.v
+Model Technology ModelSim SE-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+-- Compiling module unclebob
+
+Top level modules:
+	unclebob
+
+} {} {}} C:/Users/wyattd/Desktop/prime.v {1 {vlog -work work -vopt -stats=none C:/Users/wyattd/Desktop/prime.v
+Model Technology ModelSim SE-64 vlog 2020.2 Compiler 2020.04 Apr 19 2020
+-- Compiling module prime_circuit
+
+Top level modules:
+	prime_circuit
+
+} {} {}}

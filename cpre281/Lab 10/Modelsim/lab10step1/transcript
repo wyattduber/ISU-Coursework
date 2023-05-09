@@ -1,0 +1,18 @@
+# Compile of lab10step3b.v was successful.
+vsim -gui work.lab10step3b
+# vsim -gui work.lab10step3b 
+# Start time: 12:59:47 on Nov 12,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab10step3b(fast)
+add wave -position insertpoint  \
+sim:/lab10step3b/PRN \
+sim:/lab10step3b/Enable \
+sim:/lab10step3b/Clock \
+sim:/lab10step3b/CLRN \
+sim:/lab10step3b/Q3 \
+sim:/lab10step3b/Q2 \
+sim:/lab10step3b/Q1 \
+sim:/lab10step3b/Q0
+do lab10step2&3.do
+# End time: 13:01:03 on Nov 12,2020, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 6

@@ -1,0 +1,125 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -2.112
+TNS   : -2.112
+
+Type  : Slow 1200mV 85C Model Setup 'CLRN'
+Slack : -1.742
+TNS   : -4.230
+
+Type  : Slow 1200mV 85C Model Hold 'CLRN'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 1.326
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Clock'
+Slack : -1.074
+TNS   : -1.074
+
+Type  : Slow 1200mV 85C Model Recovery 'CLRN'
+Slack : -0.646
+TNS   : -1.747
+
+Type  : Slow 1200mV 85C Model Removal 'CLRN'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Clock'
+Slack : 0.994
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLRN'
+Slack : -3.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -1.785
+TNS   : -1.785
+
+Type  : Slow 1200mV 0C Model Setup 'CLRN'
+Slack : -1.530
+TNS   : -3.590
+
+Type  : Slow 1200mV 0C Model Hold 'CLRN'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 1.195
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Clock'
+Slack : -0.948
+TNS   : -0.948
+
+Type  : Slow 1200mV 0C Model Recovery 'CLRN'
+Slack : -0.564
+TNS   : -1.514
+
+Type  : Slow 1200mV 0C Model Removal 'CLRN'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Clock'
+Slack : 0.833
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLRN'
+Slack : -3.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -1.052
+TNS   : -1.052
+
+Type  : Fast 1200mV 0C Model Setup 'CLRN'
+Slack : -0.590
+TNS   : -1.559
+
+Type  : Fast 1200mV 0C Model Hold 'CLRN'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.756
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Clock'
+Slack : -0.605
+TNS   : -0.605
+
+Type  : Fast 1200mV 0C Model Recovery 'CLRN'
+Slack : -0.360
+TNS   : -0.980
+
+Type  : Fast 1200mV 0C Model Removal 'CLRN'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Clock'
+Slack : 0.605
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLRN'
+Slack : -3.000
+TNS   : -6.180
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.162
+
+------------------------------------------------------------

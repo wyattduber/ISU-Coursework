@@ -1,0 +1,17 @@
+# Compile of lab11step2.v was successful.
+vsim -gui work.lab11step2
+# vsim -gui work.lab11step2 
+# Start time: 10:53:32 on Nov 20,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab11step2(fast)
+add wave -position insertpoint  \
+sim:/lab11step2/PRN \
+sim:/lab11step2/w \
+sim:/lab11step2/Clock \
+sim:/lab11step2/CLRN \
+sim:/lab11step2/pin_name1 \
+sim:/lab11step2/pin_name2 \
+sim:/lab11step2/pin_name3
+do lab11.do
+# End time: 10:54:26 on Nov 20,2020, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 5

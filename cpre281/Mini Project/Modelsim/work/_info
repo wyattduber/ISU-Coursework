@@ -1,0 +1,109 @@
+m255
+K4
+z2
+!s11f vlog 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Program Files/modeltech64_2020.2/examples
+T_opt
+!s110 1601672454
+V5GAdJo7XVjgU_k`6LhM>c1
+04 8 4 work unclebob fast 0
+=1-0050569b0a29-5f779502-48-11a0
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.2;71
+R0
+T_opt1
+!s110 1601672988
+V46j32jo<<>20D?R8DcY5b3
+04 13 4 work prime_circuit fast 0
+=1-0050569b0a29-5f77971c-46-5f0
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1601673450
+V7bZeV_UYnR@hTV:Z=dUKn0
+04 13 4 work unclebobfixed fast 0
+=1-0050569b0a29-5f7798e9-3c9-1730
+R1
+R2
+n@_opt2
+R3
+vprime_circuit
+!s110 1601672969
+!i10b 1
+!s100 RE?1<n<@BQU<m:5CFlEUT0
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IeRM[=SNVO6@80a4gRWRLY2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dU:/CPRE281/MiniProject/Modelsim
+w1601671544
+8C:/Users/wyattd/Desktop/prime.v
+FC:/Users/wyattd/Desktop/prime.v
+!i122 1
+Z7 L0 1 8
+Z8 OL;L;2020.2;71
+r1
+!s85 0
+31
+!s108 1601672969.000000
+!s107 C:/Users/wyattd/Desktop/prime.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/wyattd/Desktop/prime.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vunclebob
+!s110 1601672433
+!i10b 1
+!s100 0J3KZ<<:HKGh03kKZG0fC0
+R4
+IjX_h]Xb3_2GncEGIRzRbM3
+R5
+R6
+w1601671532
+8C:/Users/wyattd/Desktop/unclebob.v
+FC:/Users/wyattd/Desktop/unclebob.v
+!i122 0
+R7
+R8
+r1
+!s85 0
+31
+!s108 1601672433.000000
+!s107 C:/Users/wyattd/Desktop/unclebob.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/wyattd/Desktop/unclebob.v|
+!i113 0
+R9
+R2
+vunclebobfixed
+!s110 1601673435
+!i10b 1
+!s100 8=eC5CTT1ENDB2BAEXRkE3
+R4
+I=>R@HK?zIo<P:9ZF2`1Tf0
+R5
+R6
+w1601673431
+8C:/Users/wyattd/Desktop/unclebobfixed.v
+FC:/Users/wyattd/Desktop/unclebobfixed.v
+!i122 2
+R7
+R8
+r1
+!s85 0
+31
+!s108 1601673435.000000
+!s107 C:/Users/wyattd/Desktop/unclebobfixed.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/wyattd/Desktop/unclebobfixed.v|
+!i113 0
+R9
+R2

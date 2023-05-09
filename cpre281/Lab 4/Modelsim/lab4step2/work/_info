@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Program Files/modeltech64_2020.2/examples
+T_opt
+!s110 1600891934
+V]>f6OTJ:QaNb@7?55nn0D2
+Z1 04 11 4 work multiplexer fast 0
+04 6 4 work normal fast 0
+Z2 04 11 4 work powersaving fast 0
+=1-0050569bcd81-5f6bac1c-22c-2f20
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2020.2;71
+R0
+T_opt1
+!s110 1600892285
+VML>]1P8bdl?E^aL4K7V=[2
+R2
+=1-0050569bcd81-5f6bad7c-299-2fd4
+R3
+R4
+n@_opt1
+R5
+R0
+T_opt2
+!s110 1600892490
+V>]Q?Z2^`M@SOSlZBe5HG_0
+R1
+=1-0050569bcd81-5f6bae49-334-209c
+o-quiet -auto_acc_if_foreign -work work +acc
+R4
+n@_opt2
+R5
+vmultiplexer
+Z6 !s110 1600891913
+!i10b 1
+!s100 lfBkP?k20SFVeTWHAHkGX1
+Z7 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IWoKd^>flQF]]>`C`AUeMG1
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 dU:/CPRE281/Lab04/Modelsim/lab4step2
+w1600825575
+8U:/CPRE281/Lab04/Quartus Prime/lab4step2/multiplexer.v
+FU:/CPRE281/Lab04/Quartus Prime/lab4step2/multiplexer.v
+!i122 1
+L0 25 26
+Z10 OL;L;2020.2;71
+r1
+!s85 0
+31
+Z11 !s108 1600891913.000000
+!s107 U:/CPRE281/Lab04/Quartus Prime/lab4step2/multiplexer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab04/Quartus Prime/lab4step2/multiplexer.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vnormal
+R6
+!i10b 1
+!s100 UGNbe5U@i[H9BT8CUZ`e62
+R7
+Ibn8SEB<Y5CTY0:OJ0QkMf0
+R8
+R9
+w1600825169
+8U:/CPRE281/Lab04/Quartus Prime/lab4step2/normal.v
+FU:/CPRE281/Lab04/Quartus Prime/lab4step2/normal.v
+!i122 0
+Z13 L0 25 18
+R10
+r1
+!s85 0
+31
+!s108 1600891912.000000
+!s107 U:/CPRE281/Lab04/Quartus Prime/lab4step2/normal.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab04/Quartus Prime/lab4step2/normal.v|
+!i113 0
+R12
+R4
+vpowersaving
+!s110 1600891914
+!i10b 1
+!s100 8AH:C6KCS>_mT3EWkm1RU3
+R7
+IiUSi<]2KMIK86z1]:MRI33
+R8
+R9
+w1600825190
+8U:/CPRE281/Lab04/Quartus Prime/lab4step2/powersaving.v
+FU:/CPRE281/Lab04/Quartus Prime/lab4step2/powersaving.v
+!i122 2
+R13
+R10
+r1
+!s85 0
+31
+R11
+!s107 U:/CPRE281/Lab04/Quartus Prime/lab4step2/powersaving.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|U:/CPRE281/Lab04/Quartus Prime/lab4step2/powersaving.v|
+!i113 0
+R12
+R4

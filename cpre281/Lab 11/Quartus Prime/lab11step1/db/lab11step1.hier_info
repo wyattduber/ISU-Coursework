@@ -1,0 +1,16 @@
+|lab11step1
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst.ACLR
+CLRN => inst1.ACLR
+CLRN => inst2.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+PRN => inst.PRESET
+PRN => inst1.PRESET
+PRN => inst2.PRESET
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+w => ~NO_FANOUT~
+
+

@@ -1,0 +1,9 @@
+|lab3step1
+F => fcg.IN1
+F => fwg.IN0
+C => cg.IN0
+G => cg.IN1
+W => fwg.IN1
+A <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,104 @@
+# Compile of lab9step2.v was successful.
+vsim -gui work.lab9step2
+# vsim -gui work.lab9step2 
+# Start time: 16:35:41 on Nov 04,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab9step2(fast)
+add wave -position insertpoint  \
+sim:/lab9step2/D \
+sim:/lab9step2/Clk \
+sim:/lab9step2/Q \
+sim:/lab9step2/Qn
+do lab9step2and3-1.do
+quit -sim
+# End time: 16:51:43 on Nov 04,2020, Elapsed time: 0:16:02
+# Errors: 0, Warnings: 5
+# reading C:/Program Files/modeltech64_2020.2/win64/../modelsim.ini
+# Loading project lab9step3a
+# Compile of lab9step3a.v was successful.
+# Compile of lab9step2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.lab9step3a
+# vsim -gui work.lab9step3a 
+# Start time: 16:53:27 on Nov 04,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3a/lab9step3a.v(40): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst'.  Expected 4, found 3.
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3a/lab9step3a.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'Qn'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.lab9step3a(fast)
+add wave -position insertpoint  \
+sim:/lab9step3a/pin_name1 \
+sim:/lab9step3a/pin_name2 \
+sim:/lab9step3a/Q \
+sim:/lab9step3a/Qn
+do lab9step2and3-1.do
+# ** UI-Msg (suppressible): (vsim-4008) Object 'Clk' not found.
+# Error in macro ./lab9step2and3-1.do line 1
+# ** UI-Msg (suppressible): (vsim-4008) Object 'Clk' not found.
+# 
+#     while executing
+# "force -freeze Clk 0 0"
+quit -sim
+# End time: 16:54:50 on Nov 04,2020, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 8
+# Load canceled
+# Compile of lab9step3a.v was successful.
+# Compile of lab9step2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.lab9step3a
+# vsim -gui work.lab9step3a 
+# Start time: 16:55:12 on Nov 04,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3a/lab9step3a.v(40): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst'.  Expected 4, found 3.
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3a/lab9step3a.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'Qn'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.lab9step3a(fast)
+add wave -position insertpoint  \
+sim:/lab9step3a/D \
+sim:/lab9step3a/Clk \
+sim:/lab9step3a/Q \
+sim:/lab9step3a/Qn
+do lab9step2and3-1.do
+quit -sim
+# End time: 17:06:53 on Nov 04,2020, Elapsed time: 0:11:41
+# Errors: 0, Warnings: 4
+quit -sim
+# reading C:/Program Files/modeltech64_2020.2/win64/../modelsim.ini
+# Loading project lab9step3b
+# Compile of lab9step2.v was successful.
+# Compile of lab9step3b.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.lab9step3a
+# vsim -gui work.lab9step3a 
+# Start time: 17:07:41 on Nov 04,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3b/lab9step3b.v(40): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst'.  Expected 4, found 3.
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3b/lab9step3b.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'Qn'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.lab9step3a(fast)
+add wave -position insertpoint sim:/lab9step3a/*
+do lab9step2and3-1.do
+# ** UI-Msg (suppressible): (vsim-4008) Object 'Clk' not found.
+# Error in macro ./lab9step2and3-1.do line 1
+# ** UI-Msg (suppressible): (vsim-4008) Object 'Clk' not found.
+# 
+#     while executing
+# "force -freeze Clk 0 0"
+quit -sim
+# End time: 17:09:11 on Nov 04,2020, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 8
+# Compile of lab9step2.v was successful.
+# Compile of lab9step3b.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.lab9step3a
+# vsim -gui work.lab9step3a 
+# Start time: 17:09:23 on Nov 04,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3b/lab9step3b.v(40): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst'.  Expected 4, found 3.
+# ** Warning: U:/CPRE281/Lab09/Quartus Prime/lab9step3b/lab9step3b.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'Qn'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.lab9step3a(fast)
+add wave -position insertpoint sim:/lab9step3a/*
+do lab9step2and3-1.do
+# End time: 17:11:48 on Nov 04,2020, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 4

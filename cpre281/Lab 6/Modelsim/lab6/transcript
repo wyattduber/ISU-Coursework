@@ -1,0 +1,262 @@
+# Compile of bcd_converter.v was successful.
+# Compile of BCDC.v was successful.
+# Compile of lab6step0.v was successful.
+# Compile of seven_seg_decoder.v failed with 3 errors.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of bcd_converter.v was successful.
+# Compile of BCDC.v was successful.
+# Compile of lab6step0.v was successful.
+# Compile of seven_seg_decoder.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.lab6step0
+# vsim -gui work.lab6step0 
+# Start time: 21:46:49 on Oct 14,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: U:/CPRE281/Lab06/Quartus Prime/bcd_converter/lab6step0.v(161): Module 'adder_4bit' is not defined.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 21:46:57 on Oct 14,2020, Elapsed time: 0:00:08
+# Errors: 1, Warnings: 6
+# Compile of bcd_converter.v was successful.
+# Compile of BCDC.v was successful.
+# Compile of lab6step0.v was successful.
+# Compile of seven_seg_decoder.v was successful.
+# Compile of adder_4bit.v was successful.
+# Compile of full_adder.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.lab6step0
+# vsim -gui work.lab6step0 
+# Start time: 21:49:18 on Oct 14,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab6step0(fast)
+add wave -position insertpoint  \
+sim:/lab6step0/Cin \
+sim:/lab6step0/Z3 \
+sim:/lab6step0/Y3 \
+sim:/lab6step0/X3 \
+sim:/lab6step0/W3 \
+sim:/lab6step0/Z2 \
+sim:/lab6step0/Y2 \
+sim:/lab6step0/X2 \
+sim:/lab6step0/W2 \
+sim:/lab6step0/A2 \
+sim:/lab6step0/B2 \
+sim:/lab6step0/C2 \
+sim:/lab6step0/D2 \
+sim:/lab6step0/E2 \
+sim:/lab6step0/F2 \
+sim:/lab6step0/G2 \
+sim:/lab6step0/A3 \
+sim:/lab6step0/B3 \
+sim:/lab6step0/C3 \
+sim:/lab6step0/D3 \
+sim:/lab6step0/E3 \
+sim:/lab6step0/F3 \
+sim:/lab6step0/G3 \
+sim:/lab6step0/N2A \
+sim:/lab6step0/N2B \
+sim:/lab6step0/N2C \
+sim:/lab6step0/N2D \
+sim:/lab6step0/N2E \
+sim:/lab6step0/N2F \
+sim:/lab6step0/N2G \
+sim:/lab6step0/N1A \
+sim:/lab6step0/N1B \
+sim:/lab6step0/N1C \
+sim:/lab6step0/N1D \
+sim:/lab6step0/N1E \
+sim:/lab6step0/N1F \
+sim:/lab6step0/N1G
+do lab6sim.do
+# ** UI-Msg: (vish-4014) No objects found matching '/A1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/A0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G0'.
+# Error in macro ./lab6sim.do line 38
+# ** UI-Msg: (vish-4014) No objects found matching '/A1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/A0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G0'.
+#     while executing
+# "add wave -position insertpoint  \
+# sim:/Z3 \
+# sim:/Y3 \
+# sim:/X3 \
+# sim:/W3 \
+# sim:/Z2 \
+# sim:/Y2 \
+# sim:/X2 \
+# sim:/W2 \
+# sim:/Cin \
+# sim:/A3 \
+# sim:/B3 \
+# sim:/..."
+do lab6sim.do
+# ** UI-Msg: (vish-4014) No objects found matching '/A1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/A0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G0'.
+# Error in macro ./lab6sim.do line 38
+# ** UI-Msg: (vish-4014) No objects found matching '/A1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/A0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G0'.
+#     while executing
+# "add wave -position insertpoint  \
+# sim:/Z3 \
+# sim:/Y3 \
+# sim:/X3 \
+# sim:/W3 \
+# sim:/Z2 \
+# sim:/Y2 \
+# sim:/X2 \
+# sim:/W2 \
+# sim:/Cin \
+# sim:/A3 \
+# sim:/B3 \
+# sim:/..."
+do lab6sim.do
+# ** UI-Msg: (vish-4014) No objects found matching '/A1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/A0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G0'.
+# Error in macro ./lab6sim.do line 38
+# ** UI-Msg: (vish-4014) No objects found matching '/A1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G1'.
+# ** UI-Msg: (vish-4014) No objects found matching '/A0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/B0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/C0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/D0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/E0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/F0'.
+# ** UI-Msg: (vish-4014) No objects found matching '/G0'.
+#     while executing
+# "add wave -position insertpoint  \
+# sim:/Z3 \
+# sim:/Y3 \
+# sim:/X3 \
+# sim:/W3 \
+# sim:/Z2 \
+# sim:/Y2 \
+# sim:/X2 \
+# sim:/W2 \
+# sim:/Cin \
+# sim:/A3 \
+# sim:/B3 \
+# sim:/..."
+do lab6sim.do
+# ** UI-Msg (suppressible): (vsim-4008) Object 'N2[3]' not found.
+# Error in macro ./lab6sim.do line 2
+# ** UI-Msg (suppressible): (vsim-4008) Object 'N2[3]' not found.
+# 
+#     while executing
+# "force N2[3] 0 0, 1 200 -repeat 400"
+# Compile of lab6step0.v was successful.
+QUIT -SIM
+# invalid command name "QUIT"
+quit -sim
+# End time: 22:04:15 on Oct 14,2020, Elapsed time: 0:14:57
+# Errors: 0, Warnings: 4
+# Compile of bcd_converter.v was successful.
+# Compile of BCDC.v was successful.
+# Compile of lab6step0.v was successful.
+# Compile of seven_seg_decoder.v was successful.
+# Compile of adder_4bit.v was successful.
+# Compile of full_adder.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.lab6step0
+# vsim -gui work.lab6step0 
+# Start time: 22:04:39 on Oct 14,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.lab6step0(fast)
+add wave -position insertpoint  \
+sim:/lab6step0/Cin \
+sim:/lab6step0/N2 \
+sim:/lab6step0/N3 \
+sim:/lab6step0/A2 \
+sim:/lab6step0/B2 \
+sim:/lab6step0/C2 \
+sim:/lab6step0/D2 \
+sim:/lab6step0/E2 \
+sim:/lab6step0/F2 \
+sim:/lab6step0/G2 \
+sim:/lab6step0/A3 \
+sim:/lab6step0/B3 \
+sim:/lab6step0/C3 \
+sim:/lab6step0/D3 \
+sim:/lab6step0/E3 \
+sim:/lab6step0/F3 \
+sim:/lab6step0/G3 \
+sim:/lab6step0/A1 \
+sim:/lab6step0/B1 \
+sim:/lab6step0/C1 \
+sim:/lab6step0/D1 \
+sim:/lab6step0/E1 \
+sim:/lab6step0/F1 \
+sim:/lab6step0/G1 \
+sim:/lab6step0/A0 \
+sim:/lab6step0/B0 \
+sim:/lab6step0/C0 \
+sim:/lab6step0/D0 \
+sim:/lab6step0/E0 \
+sim:/lab6step0/F0 \
+sim:/lab6step0/G0
+do lab6sim.do
+# End time: 22:07:19 on Oct 14,2020, Elapsed time: 0:02:40
+# Errors: 0, Warnings: 3

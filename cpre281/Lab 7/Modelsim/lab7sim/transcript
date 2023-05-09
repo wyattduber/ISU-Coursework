@@ -1,0 +1,28 @@
+# Compile of adder_4bit.v was successful.
+# Compile of full_adder.v was successful.
+# Compile of add_sub.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.add_sub
+# vsim -gui work.add_sub 
+# Start time: 18:37:28 on Oct 22,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.add_sub(fast)
+add wave -position insertpoint  \
+sim:/add_sub/X3 \
+sim:/add_sub/Y3 \
+sim:/add_sub/X2 \
+sim:/add_sub/Y2 \
+sim:/add_sub/X1 \
+sim:/add_sub/Y1 \
+sim:/add_sub/X0 \
+sim:/add_sub/Y0 \
+sim:/add_sub/Control \
+sim:/add_sub/Overflow \
+sim:/add_sub/Cout \
+sim:/add_sub/S3 \
+sim:/add_sub/S2 \
+sim:/add_sub/S1 \
+sim:/add_sub/S0
+do lab7sim.do
+# End time: 18:41:16 on Oct 22,2020, Elapsed time: 0:03:48
+# Errors: 0, Warnings: 7

@@ -1,0 +1,95 @@
+|lab8step2
+F0 <= mux4to1:inst.F
+X0 => mux4to1:inst.W0
+X_1 => mux4to1:inst.W1
+X_1 => mux4to1:inst1.W1
+X_1 => mux4to1:inst2.W1
+X_1 => mux4to1:inst3.W1
+X_2 => mux4to1:inst.W2
+X_2 => mux4to1:inst1.W2
+X_2 => mux4to1:inst2.W2
+X_2 => mux4to1:inst3.W2
+X_3 => mux4to1:inst.W3
+X_3 => mux4to1:inst1.W3
+X_3 => mux4to1:inst2.W3
+X_3 => mux4to1:inst3.W3
+S1 => mux4to1:inst.S1
+S1 => mux4to1:inst1.S1
+S1 => mux4to1:inst2.S1
+S1 => mux4to1:inst3.S1
+S0 => mux4to1:inst.S0
+S0 => mux4to1:inst1.S0
+S0 => mux4to1:inst2.S0
+S0 => mux4to1:inst3.S0
+F1 <= mux4to1:inst1.F
+X1 => mux4to1:inst1.W0
+F2 <= mux4to1:inst2.F
+X2 => mux4to1:inst2.W0
+F3 <= mux4to1:inst3.F
+X3 => mux4to1:inst3.W0
+
+
+|lab8step2|mux4to1:inst
+W0 => F.IN1
+W1 => F.IN1
+W2 => F.IN1
+W3 => F.IN1
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab8step2|mux4to1:inst1
+W0 => F.IN1
+W1 => F.IN1
+W2 => F.IN1
+W3 => F.IN1
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab8step2|mux4to1:inst2
+W0 => F.IN1
+W1 => F.IN1
+W2 => F.IN1
+W3 => F.IN1
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab8step2|mux4to1:inst3
+W0 => F.IN1
+W1 => F.IN1
+W2 => F.IN1
+W3 => F.IN1
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S1 => F.IN0
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+S0 => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

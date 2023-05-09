@@ -1,0 +1,50 @@
+# Compile of unclebob.v was successful.
+vsim -gui work.unclebob
+# vsim -gui work.unclebob 
+# Start time: 16:00:42 on Oct 02,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.unclebob(fast)
+add wave -position insertpoint  \
+sim:/unclebob/W \
+sim:/unclebob/X \
+sim:/unclebob/Y \
+sim:/unclebob/Z \
+sim:/unclebob/B
+do miniproject.do
+quit -sim
+# End time: 16:03:28 on Oct 02,2020, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 5
+# Compile of prime.v was successful.
+vsim -gui work.prime_circuit
+# vsim -gui work.prime_circuit 
+# Start time: 16:09:43 on Oct 02,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.prime_circuit(fast)
+add wave -position insertpoint sim:/prime_circuit/*
+do miniproject.do
+quit -sim
+# End time: 16:13:07 on Oct 02,2020, Elapsed time: 0:03:24
+# Errors: 0, Warnings: 3
+# Compile of unclebobfixed.v failed with 6 errors.
+# Compile of unclebobfixed.v failed with 6 errors.
+# Compile of unclebobfixed.v failed with 1 errors.
+# Compile of unclebobfixed.v failed with 1 errors.
+# Compile of unclebobfixed.v was successful.
+vsim -gui work.unclebobfixed
+# vsim -gui work.unclebobfixed 
+# Start time: 16:17:26 on Oct 02,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.unclebobfixed(fast)
+do miniproject.do
+quit -sim
+# End time: 16:18:01 on Oct 02,2020, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 7
+vsim -gui work.unclebobfixed
+# vsim -gui work.unclebobfixed 
+# Start time: 16:18:07 on Oct 02,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.unclebobfixed(fast)
+add wave -position insertpoint sim:/unclebobfixed/*
+do miniproject.do
+# End time: 16:19:25 on Oct 02,2020, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 1

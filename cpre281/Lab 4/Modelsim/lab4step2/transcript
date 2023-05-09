@@ -1,0 +1,120 @@
+# Compile of normal.v was successful.
+# Compile of multiplexer.v was successful.
+# Compile of powersaving.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.multiplexer work.normal work.powersaving
+# vsim -gui work.multiplexer work.normal work.powersaving 
+# Start time: 15:12:08 on Sep 23,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.multiplexer(fast)
+# Loading work.normal(fast)
+# Loading work.powersaving(fast)
+add wave -position insertpoint sim:/multiplexer/*
+force -freeze sim:/multiplexer/E 1'h1 0
+add wave -position insertpoint  \
+sim:/normal/P \
+sim:/normal/T \
+sim:/normal/H \
+sim:/normal/E
+force -freeze sim:/normal/P 1'h1 0
+force -freeze sim:/normal/T 1'h1 0
+force -freeze sim:/normal/H 1'h0 0
+force -freeze sim:/normal/E 1'hx 0
+run 100
+force -freeze sim:/normal/P 1'h0 0
+force -freeze sim:/normal/T 1'h0 0
+force -freeze sim:/normal/H 1'h1 0
+force -freeze sim:/normal/E 1'hx 0
+run 100
+force -freeze sim:/normal/P 1'h1 0
+force -freeze sim:/normal/T 1'h0 0
+force -freeze sim:/normal/H 1'h1 0
+force -freeze sim:/normal/E 1'hx 0
+run 100
+force -freeze sim:/normal/P 1'h0 0
+force -freeze sim:/normal/T 1'h1 0
+force -freeze sim:/normal/H 1'h1 0
+force -freeze sim:/normal/E 1'hx 0
+run 100
+add wave -position insertpoint  \
+sim:/powersaving/P \
+sim:/powersaving/T \
+sim:/powersaving/H \
+sim:/powersaving/F
+quit -sim
+# End time: 15:17:43 on Sep 23,2020, Elapsed time: 0:05:35
+# Errors: 0, Warnings: 9
+vsim -gui work.powersaving
+# vsim -gui work.powersaving 
+# Start time: 15:18:00 on Sep 23,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.powersaving(fast)
+add wave -position insertpoint  \
+sim:/powersaving/P \
+sim:/powersaving/T \
+sim:/powersaving/H \
+sim:/powersaving/F
+force -freeze sim:/powersaving/P 1'h0 0
+force -freeze sim:/powersaving/T 1'h0 0
+force -freeze sim:/powersaving/H 1'h0 0
+force -freeze sim:/powersaving/F 1'hx 0
+run 100
+force -freeze sim:/powersaving/P 1'h1 0
+force -freeze sim:/powersaving/T 1'h0 0
+force -freeze sim:/powersaving/H 1'h0 0
+force -freeze sim:/powersaving/F 1'hx 0
+run 100
+force -freeze sim:/powersaving/P 1'h0 0
+force -freeze sim:/powersaving/T 1'h01 0
+force -freeze sim:/powersaving/H 1'h1 0
+force -freeze sim:/powersaving/F 1'hx 0
+force -freeze sim:/powersaving/P 1'h0 0
+force -freeze sim:/powersaving/T 1'h1 0
+force -freeze sim:/powersaving/H 1'h1 0
+force -freeze sim:/powersaving/F 1'hx 0
+run 100
+force -freeze sim:/powersaving/P 1'h1 0
+force -freeze sim:/powersaving/T 1'h1 0
+force -freeze sim:/powersaving/H 1'h0 0
+force -freeze sim:/powersaving/F 1'hx 0
+run 100
+force -freeze sim:/powersaving/P 1'h1 0
+force -freeze sim:/powersaving/T 1'h0 0
+force -freeze sim:/powersaving/H 1'h1 0
+force -freeze sim:/powersaving/F 1'hx 0
+run 100
+quit -sim
+# End time: 15:21:21 on Sep 23,2020, Elapsed time: 0:03:21
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.multiplexer
+# vsim -voptargs="+acc" work.multiplexer 
+# Start time: 15:21:26 on Sep 23,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.multiplexer(fast)
+add wave -position insertpoint  \
+sim:/multiplexer/E \
+sim:/multiplexer/F \
+sim:/multiplexer/M \
+sim:/multiplexer/AC
+force -freeze sim:/multiplexer/E 1'h1 0
+force -freeze sim:/multiplexer/F 1'h0 0
+force -freeze sim:/multiplexer/M 1'h1 0
+force -freeze sim:/multiplexer/AC 1'hx 0
+run 100
+force -freeze sim:/multiplexer/E 1'h0 0
+force -freeze sim:/multiplexer/F 1'h1 0
+force -freeze sim:/multiplexer/M 1'h0 0
+force -freeze sim:/multiplexer/AC 1'hx 0
+run 100
+force -freeze sim:/multiplexer/E 1'h0 0
+force -freeze sim:/multiplexer/F 1'h0 0
+force -freeze sim:/multiplexer/M 1'h1 0
+force -freeze sim:/multiplexer/AC 1'hx 0
+run 100
+force -freeze sim:/multiplexer/E 1'h1 0
+force -freeze sim:/multiplexer/F 1'h1 0
+force -freeze sim:/multiplexer/M 1'h1 0
+force -freeze sim:/multiplexer/AC 1'hx 0
+run 100
+# End time: 15:26:25 on Sep 23,2020, Elapsed time: 0:04:59
+# Errors: 0, Warnings: 1

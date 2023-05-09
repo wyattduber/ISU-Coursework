@@ -1,0 +1,26 @@
+|lab9step3a
+Q <= lab9step2:inst1.Q
+pin_name1 => lab9step2:inst.D
+pin_name2 => lab9step2:inst.Clk
+pin_name2 => inst3.IN0
+Qn <= lab9step2:inst1.Qn
+
+
+|lab9step3a|lab9step2:inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+Clk => SYNTHESIZED_WIRE_2.IN1
+Clk => SYNTHESIZED_WIRE_3.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab9step3a|lab9step2:inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+Clk => SYNTHESIZED_WIRE_2.IN1
+Clk => SYNTHESIZED_WIRE_3.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+

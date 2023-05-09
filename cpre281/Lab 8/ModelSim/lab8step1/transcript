@@ -1,0 +1,59 @@
+# Compile of lab8step2.v was successful.
+# Compile of mux4to1.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.lab8step2
+# vsim -gui work.lab8step2 
+# Start time: 19:03:09 on Oct 27,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.lab8step2(fast)
+do lab8step2sim.do
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(3)'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(2)'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(1)'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(0)'.
+# Error in macro ./lab8step2sim.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(3)'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(2)'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(1)'.
+# ** UI-Msg: (vish-4014) No objects found matching '/lab8step2/F(0)'.
+#     while executing
+# "add wave -position insertpoint  \
+# sim:/lab8step2/X0 \
+# sim:/lab8step2/X1 \
+# sim:/lab8step2/X2 \
+# sim:/lab8step2/X3 \
+# sim:/lab8step2/S1 \
+# sim:/lab8step2/S..."
+# Compile of lab8step2.v failed with 4 errors.
+# Compile of mux4to1.v was successful.
+# 2 compiles, 1 failed with 4 errors.
+# Compile of lab8step2.v failed with 4 errors.
+# Compile of mux4to1.v was successful.
+# 2 compiles, 1 failed with 4 errors.
+# Compile of lab8step2.v was successful.
+# Compile of mux4to1.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui work.lab8step2
+# End time: 19:07:29 on Oct 27,2020, Elapsed time: 0:04:20
+# Errors: 0, Warnings: 9
+# vsim -gui work.lab8step2 
+# Start time: 19:07:29 on Oct 27,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.lab8step2(fast)
+quit -sim
+# End time: 19:07:57 on Oct 27,2020, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 1
+vsim -gui work.lab8step2
+# vsim -gui work.lab8step2 
+# Start time: 19:08:07 on Oct 27,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.lab8step2(fast)
+add wave -position insertpoint sim:/lab8step2/*
+do lab8step2.do
+# Cannot open macro file: lab8step2.do
+do lab8step2sim.do
+# End time: 19:10:51 on Oct 27,2020, Elapsed time: 0:02:44
+# Errors: 0, Warnings: 1
