@@ -1,0 +1,17 @@
+Names: Sullivan Jahnke, Wyatt Duberstein
+
+Project1b Description: In this iteration of project 1, we added two system calls - nice and getpstat
+	nice: This system call takes a single integer, and sets the current process's nice value to that parameter. 
+			If the parameter is > 19 or < -20, the function returns 1 (error). If the call is successful, it returns
+			0. To implement this, we added a field to the proc struct called "nicevalue" in "proc.h". The default nicevalue 
+			is 10, and it is set while allocating the process.
+			
+	getpstat: This system call takes a pstat struct (defined in "kernel/pstat.h") as a parameter and sets that struct's fields
+				to include information about every process that is not in the UNUSED state. Its fields are inuse[NPROC], pid[NPROC],
+				and nice[PID]. This allows us a way to see the state, pid, and nice value of every single process in a single struct.
+				
+List of Files Added: "getpstat.c", "nice.c", "pstat.h"
+
+List of Files Modified: Kernel - "syscall.h", "syscall.c", "sysproc.c", "proc.h", "proc.c"
+						User - "usys.pl", "user.h"
+						Makefile
