@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset = "utf-8"/>
+	<style>
+		.errorMessage{color: red;}
+	</style>
+	<script src="./validation2.js"></script>
+</head>
+
+<body>
+		<h1>Validation Form</h1>
+		
+		<form id="oinfo">
+    <fieldset>
+      <legend>Other Information</legend>
+      <p id="Email">
+        <label for="email">Email Address *</label>
+        <input id="email" name="email" type="text"/>
+      </p>
+	  <p id="Phone">
+        <label for="phone">Phone Number *</label>
+        <input id="phone" name="phone" type="text"/>
+      </p>
+	  <p id="Address">
+        <label for="phone">Address *</label>
+		<input id="address" name="address" type="text"/>
+      </p>
+		<p>*Required Field = Cannot be Empty</p>
+      <input onClick="validate2()" type="button" id="submit" name="submit" value="Submit"/>
+    </fieldset>
+  </form>
+	</body>
+</html>

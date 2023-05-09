@@ -1,0 +1,62 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+
+<style>
+  form,div,p {
+    margin: 20px;
+    border: 5px solid blue;
+  }
+</style>
+</head>
+
+<body>
+<h1>Example of capture of events</h1>
+<form id="form1">
+  <h2>Inside the form</h2>
+  <div id="div1">
+    <h3>Inside the div</h3>
+    <p id="p1">
+    Inside the paragraph</p>
+  </div>
+</form>
+
+<script>
+$(document).ready(function () {
+
+  // NOTE THAT WE HAVE TO USE 
+  // JAVASCRIPTS addEventListener with last argument as true
+  // We cannot just use the jQuery library's click function
+  //
+  p = document.getElementById("p1");
+  p.addEventListener("click",
+      function(e) {
+         alert("Hi! This is the current target: " + e.currentTarget
+           + "\n The target element was:" +e.target);
+         $(this).css( "background-color", "red" );
+      }, true);
+
+  div = document.getElementById("div1");
+  div.addEventListener("click",
+      function(e) {
+         alert("Hi! This is the current target: " + e.currentTarget
+           + "\n The target element was:" +e.target);
+         $(this).css( "background-color", "yellow" );
+      }, true);
+
+  form = document.getElementById("form1");
+  form.addEventListener("click",
+      function(e) {
+         alert("Hi! This is the current target: " + e.currentTarget
+           + "\n The target element was:" +e.target);
+         $(this).css( "background-color", "green" );
+      }, true);
+
+
+}); 
+
+</script>
+
+</body>
+</html>

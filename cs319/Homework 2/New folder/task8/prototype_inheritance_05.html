@@ -1,0 +1,51 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+
+<style>
+  form,div,p {
+    margin: 20px;
+    border: 5px solid blue;
+  }
+</style>
+</head>
+
+<body>
+
+<script>
+let employee = {
+  name:"employee",
+  salary: true,
+  study() {
+    document.write("Study basic courses"+"<br/>");
+  },
+  showName(){
+    document.write("Name of position: "+this.name+"<br/>");
+  }
+};
+let developer = {
+  name:"developer",
+  writeCode:true,
+  __proto__:employee
+};
+developer.study = function() {
+  document.write("Study basic courses abd programming language courses"+"<br/>");
+};
+
+ for(let prop in developer) {
+   let isOwn = developer.hasOwnProperty(prop);
+
+   if (isOwn) {
+     document.write("Own properties/functions: "+prop+"<br/>");
+   } else {
+     document.write("Inherited properties/functions: "+prop+"<br/>");
+   }
+ }
+
+
+
+</script>
+
+</body>
+</html>

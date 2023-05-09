@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+
+<style>
+  form,div,p {
+    margin: 20px;
+    border: 5px solid blue;
+  }
+</style>
+</head>
+
+<body>
+
+<script>
+let employee = {
+  salary: true
+};
+let developer = {
+  writeCode:true
+};
+// developer.__proto__ = employee;
+document.write("Salary: "+developer.salary+"<br/>")
+document.write("Code: "+developer.writeCode+"<br/>")
+
+</script>
+
+</body>
+</html>

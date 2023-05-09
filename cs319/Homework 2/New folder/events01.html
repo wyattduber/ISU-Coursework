@@ -1,0 +1,52 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+
+<style>
+  form,div,p {
+    margin: 20px;
+    border: 5px solid blue;
+  }
+</style>
+</head>
+
+<body>
+<h1>Example of bubbling up of events</h1>
+<form>
+  <h2>Inside the form</h2>
+  <div>
+    <h3>Inside the div</h3>
+    <p>
+    Inside the paragraph</p>
+  </div>
+</form>
+
+<script>
+$(document).ready(function () {
+
+  $("p").click(function(e) {
+    alert("Hi! This is the current target: " + e.currentTarget
+         + "\n The target element was:" +e.target);
+    $(this).css( "background-color", "red" );
+  });
+  $("div").click(function(e) {
+    alert("Hi! This is the current target: " + e.currentTarget
+         + "\n The target element was:" +e.target);
+    $(this).css( "background-color", "green" );
+  });
+  $("form").click(function(e) {
+    alert("Hi! This is the current target: " + e.currentTarget
+         + "\n The target element was:" +e.target);
+    $(this).css( "background-color", "yellow" );
+  });
+  $("body").click(function(e) {
+    alert("We have bubbled all the way to the body!");
+  });
+
+}); 
+
+</script>
+
+</body>
+</html>

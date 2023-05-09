@@ -1,0 +1,55 @@
+<html>
+<head>
+<!--
+  THE PURPOSE OF THIS EXAMPLE IS TO SHOW var, let, and const 
+
+-->
+</head>
+
+<body>
+<script> 
+
+// ANYTHING AT THIS OUTER LEVEL IS GLOBAL SCOPE.
+
+firstName = 10;  // firstName is defined in global scope.
+// firstName is now available everywhere!
+
+// var keyword DECLARES variable in function scope
+
+var me; // this is actually in global scope
+
+function test() {
+  var me; // this is a DIFFERENT variable. It's scope is within the
+  // fuunction.
+}
+
+// let keyword DECLARES variable in block scope 
+// this means within curly brackets.
+
+let abc; // this declares in global scope
+
+if (firstName === "Hello") {
+  
+    for (let i = 1; i < 10; i++) {
+      // here the let allows i to be visible ONLY in this for loop.
+
+    }
+
+}
+
+// const keyword is like let EXCEPT
+// that it does not allow reassignment to the variable being
+// declared.
+
+const def = 10;
+
+def = 100; // NOT allowed
+
+// use of const and let will help make your code MUCH MORE
+// a) bug free and
+// b) readable and understandable by others
+// just avoid ever using var
+
+</script>
+</body>
+</html>

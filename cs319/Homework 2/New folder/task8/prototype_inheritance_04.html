@@ -1,0 +1,53 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+
+<style>
+  form,div,p {
+    margin: 20px;
+    border: 5px solid blue;
+  }
+</style>
+</head>
+
+<body>
+<script>
+let employee = {
+  name:"employee",
+  salary: true,
+  study() {
+    document.write("Study basic courses"+"<br/>");
+  },
+   showName(){
+     document.write("Name of position: "+this.name+"<br/>");
+   }
+};
+let developer = {
+  name:"developer",
+  writeCode:true,
+  __proto__:employee
+};
+developer.study = function() {
+  document.write("Study basic courses abd programming language courses"+"<br/>");
+};
+
+let hardwareDeveloper = {
+  name:"hardwareDeveloper",
+  __proto__:developer
+};
+hardwareDeveloper.study = function() {
+  document.write("Study basic courses,programming language courses and embeded system courses"+"<br/>");
+};
+
+
+
+
+hardwareDeveloper.showName()
+
+
+
+</script>
+
+</body>
+</html>

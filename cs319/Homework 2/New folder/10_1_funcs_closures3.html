@@ -1,0 +1,43 @@
+<html>
+<head>
+<!-- 
+  THE PURPOSE OF THIS EXAMPLE IS TO SHOW HOW YOU HAVE TO BE CAREFUL
+  YOU UNDERSTAND WHAT "ENVIRONMENT" MAKES UP A CLOSURE!
+-->
+
+</head>
+
+<body>
+<h1>
+
+
+
+<script> 
+
+
+function doThis(x) { return function() {x++; return x; } }
+
+function createThis () {
+   var result = new Array();
+   var i = 0;
+   for (i = 0; i<2; i++) { result[i] = doThis(i); }
+
+   return result; // return an array of functions
+};
+
+x = createThis();
+ document.write(x[0]() + "<br>");
+ document.write(x[0]() + "<br>");
+
+// Note that function createThis has exited a long time back.
+// Its local variables and arguments are gone
+// The function returned by createThis is a CLOSURE.
+// It includes the code + the environment that it was created in
+     // result [i] = (function() {
+                        //var j = i; 
+                        //return function(){return j;};
+                      //})(); // IIFE
+
+</script>
+</body>
+</html>
